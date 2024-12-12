@@ -93,7 +93,6 @@ int main() {
 			play = false;
 			continue;
 			break;
-			break;
 		case 'X':
 			play = false;
 			continue;
@@ -101,7 +100,6 @@ int main() {
 		default:
 			std::cout << endl << "Invalid Selection" << endl;
 			continue;
-			break;
 		}
 
 
@@ -109,6 +107,11 @@ int main() {
 		std::cout << "Input size of the board (say (2,2), (2,3), (3,3), (3,5), (5,5) ... " << endl;
 
 		int row = 3, col = 3;
+		string inp = "";
+		while (true) {
+			cin >> inp;
+
+		}
 		cin >> row >> col;
 
 		Board board(row, col);
