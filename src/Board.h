@@ -10,11 +10,12 @@ private:
 	vector<Cell> emptyCells;
 
 public:
-	Board(int r, int c) :
-		row(r), col(c) {
+	Board(int r, int c) : row(r), col(c) {
 		grid = new int* [row];
-		for (int i = 0; i < row; i++)
+
+		for (int i = 0; i < row; i++) {
 			grid[i] = new int[col];
+		}
 
 		for (int i = 0; i < row; i++) {
 			for (int j = 0; j < col; j++) {
